@@ -1,0 +1,27 @@
+{
+    "name": "devrusspace/kennwort-email-sender",
+    "description": "API сервиса по отправке транзакционных e-mail собщений kennwort.ru.",
+    "keywords": ["email", "api", "mailing list", "transactional", "trigger"],
+    "homepage": "https://github.com/devrusspace/kennwort-email-sender",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devrusspace\\Kennwort\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "devrusspace",
+            "email": "mail@devrus.space"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
