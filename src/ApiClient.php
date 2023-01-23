@@ -141,7 +141,7 @@ class ApiClient
     private function getClient()
     {
         if (!$this->_client) {
-            $this->_client = new \GuzzleHttp\Client(['headers' => $this->getHeaders()]);
+            $this->_client = new \GuzzleHttp\Client(['headers' => $this->getHeaders(), 'verify' => false]);
         }
         return $this->_client;
     }
